@@ -10,6 +10,8 @@
 --------------------------------------------------------------*/
 
 :root{
+  --linkhover: #ddd;
+
   /*Green Theme*/
   /*--themecolor: #18d26e;  */
   /*--themecolorLines: #4ceb95;*/
@@ -19,15 +21,16 @@
   /*--themecolorLines: #58b2fc;*/
 
   /*Red Theme*/
-  --themecolor: #DB4437;
-  --themecolorLines: #DB4437;
+  /*--themecolor: #DB4437;*/
+  /*--themecolorLines: #DB4437;*/
+  
 
   /*Yellow Theme*/
   /*--themecolor: #F4B400;*/
-  /*--themecolorLines: #F4B400;*/
+  --themecolorLines: #F4B400;
 
   /*Orange Theme*/
-  /*--themecolor: #f48e00;*/
+  --themecolor: #f48e00;
   /*--themecolorLines: #f48e00;*/
 
   /*Teal Theme*/
@@ -92,7 +95,8 @@ a {
 }
 
 a:hover {
-  color: #35e888;
+  /*color: #35e888;*/
+  color: var(--linkhover);
   text-decoration: none;
 }
 
@@ -153,6 +157,15 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 40px;
   display: flex;
 }
+
+#header .social-links .col-6{
+  /*margin-top: 40px;*/
+  margin: 0 0;
+  padding: 0 0;
+  /*display: flex;*/
+  justify-content: space-between;ace-around;
+}
+
 
 #header .social-links a {
   font-size: 32px;
@@ -246,6 +259,8 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   right: 15px;
   top: 15px;
+  /*right: 47%;*/
+  /*bottom: 5%;*/
   z-index: 9998;
   border: 0;
   background: none;
@@ -258,7 +273,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #fff;
+  color: var(--themecolor);
 }
 
 .mobile-nav {
@@ -711,7 +726,10 @@ section .container {
 .services .icon-box {
   text-align: center;
   background: rgba(204, 204, 204, 0.1);
-  padding: 80px 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   transition: all ease-in-out 0.3s;
 }
 
@@ -786,7 +804,7 @@ section .container {
 
 /*--------------------------------------------------------------
 # Portfolio
---------------------------------------------------------------*/
+--------------------------------------------------------------
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -943,7 +961,7 @@ section .container {
 
 /*--------------------------------------------------------------
 # Contact
---------------------------------------------------------------*/
+--------------------------------------------------------------
 .contact .info-box {
   color: #444444;
   padding: 20px;
@@ -1207,7 +1225,7 @@ section .container {
   padding: 15px;
   text-align: right;
   font-size: 13px;
-  color: #fff;
+  color: #777;
   z-index: 1;
 }
 
@@ -1220,7 +1238,7 @@ section .container {
 }
 
 .credits a {
-  color: var(--themecolor);
+  color: #777; /*var(--themecolor);*/
   transition: 0.3s;
 }
 
