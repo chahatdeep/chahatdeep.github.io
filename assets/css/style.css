@@ -59,11 +59,11 @@ video {
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
-    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+    /*background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;*/
     background-size: cover;
     transition: 1s opacity;
     cursor: pointer;
-    filter: grayscale(100%);
+    filter: grayscale(100%) blur(3px) brightness(60%);
 }
 
 .stopfade { 
@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header * {
-  transition: ease-in-out 0.3s;
+  /*transition: ease-in-out 0.3s;*/
 }
 
 #header h1 {
@@ -187,7 +187,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 992px) {
   #header h1 {
-    font-size: 36px;
+    font-size: 30px;
   }
   #header h2 {
     font-size: 20px;
@@ -226,9 +226,10 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   position: relative;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  /*font-family: "Roboto-Black", sans-serif;*/
 }
 
 .nav-menu a:before {
