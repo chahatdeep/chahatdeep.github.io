@@ -215,6 +215,20 @@ h1, h2, h3, h4, h5, h6 {
   width: 30px;
   height: 30px;
 }
+
+  .img-fluid {
+    max-width: 75%;
+    height: auto;
+    justify-content: center;
+}
+}
+
+@media (max-width: 992px) {
+    .img-fluid {
+    max-width: 50%;
+    height: auto;
+    justify-content: center;
+}
 }
 
 @media (max-width: 368px) {
@@ -222,6 +236,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 24px;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
