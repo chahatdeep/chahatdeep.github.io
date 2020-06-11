@@ -94,6 +94,12 @@ a {
   color: var(--themecolor);
 }
 
+p {
+  /*text-align: justify;*/
+  /*text-justify: inter-word;*/
+}
+
+
 a:hover {
   /*color: #35e888;*/
   color: var(--linkhover);
@@ -223,9 +229,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 }
 
+#header .home-screen-logo {
+  margin: 0;
+  padding: 0;
+}
+
 @media (max-width: 992px) {
     .img-fluid {
-    max-width: 50%;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+  .img-fluid {
+    max-width: 100%;
     height: auto;
     justify-content: center;
 }
@@ -411,6 +428,16 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 24px;
   }
 }
+
+@media (max-width: 1200px) {
+  #header.header-top {
+    height: 60px;
+  }
+  #header.header-top h1 {
+    font-size: 22px;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Sections General
@@ -1264,6 +1291,8 @@ section .container {
   font-size: 13px;
   color: #777;
   z-index: 1;
+  opacity: 0.3;
+
 }
 
 @media (max-width: 992px) {
