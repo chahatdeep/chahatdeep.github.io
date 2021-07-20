@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
 #header {
   transition: ease-in-out 0s;
   position: relative;
-  height: 40vh;
+  height: 10000vh;
   display: flex;
   align-items: center;
   z-index: 997;
@@ -135,13 +135,14 @@ h1, h2, h3, h4, h5, h6 {
 
 #header h1 {
   font-size: 72px;
+  /*position: 1000px;*/
 /*  text-shadow:
     -1px -1px 0 #ddd,
     1px -1px 0 #ddd,
     -1px 1px 0 #ddd,
     1px 1px 0 #ddd;  */
   margin: 0;
-  padding: 0px;
+  padding: 10px;
   line-height: 1;
   font-weight: 1000;
   font-family: "Poppins", sans-serif;  
@@ -300,6 +301,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Desktop Navigation */
 .nav-menu {
   margin-top: 35px;
+
 }
 
 .nav-menu ul {
@@ -331,6 +333,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu li + li {
   margin-left: 30px;
+  font-size: 4px;
  /* background: rgba(255, 255, 255, 0.7);
   border-radius: 16px;
   padding-left: 8px;
@@ -352,8 +355,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu a:before {
   content: "";
-  position: -10000px;
-  /* position: absolute;*/
+  /*position: -10000px;*/
+   position: absolute;
   width: 0;
   height: 2px;
   bottom: -4px;
@@ -367,19 +370,25 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a:hover:before, .nav-menu li:hover > a:before, .nav-menu .active > a:before {
   visibility: visible;
   width: 100%;
+  text-decoration: underline;
+
 
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   color: var(--themecolor);
   text-decoration: none;
+
 /*  background: rgba(255, 255, 255, 0.7);
   border-radius: 16px;
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
-*/}
+*/
+  /*text-decoration: underline;*/
+
+}
 
 
 /* Mobile Navigation */
@@ -1550,7 +1559,7 @@ section .container {
 
 .credits a {
   color: #000; /*var(--themecolor);*/
-  transition: 0.1s;
+  transition: 0s;
   background: rgba(255, 255, 255, 1);
   padding: 5px;
   border-radius: 20px;
