@@ -41,17 +41,17 @@
   <!-- MathJax CSS | JS File -->
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-  <script type="text/javascript">
-    window.onload = function (event) {
-    window.location.hash = "#home";
-    window.location.reload()
-         history.go(0);
-
-
-};
-  </script>
-
-  </script>
+ <script>
+  window.onload = function() {
+    //considering there aren't any hashes in the urls already
+    if(!window.location.hash) {
+        //setting window location
+        window.location = window.location + '#home';
+        //using reload() method to reload web page
+        window.location.reload();
+    }
+}
+</script>
 
 
   <script type="text/javascript">
@@ -72,13 +72,23 @@
   <!-- ======= Header ======= -->
   <header id="header" class="header-tops">
     <div class="container">   
-      <script type="text/javascript">
+      <!-- <script type="text/javascript">
         window.onload = function (event) {
         x = 0;
         window.location.hash = "#home";
-        history.go(1);
+                history.go(2);
+
+        window.onload = function() {
+        if(!window.location.hash) {
+        window.location = window.location + '#home';
+        window.location.reload();
+        history.go(-1);
+    }
+}
         };
-        </script>
+        </script> -->
+
+
 
       <!-- Uncomment below if you prefer to use an image logo -->
       <a class="mr-auto"> 
