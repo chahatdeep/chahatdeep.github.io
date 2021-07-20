@@ -44,8 +44,15 @@
   <script type="text/javascript">
     window.onload = function (event) {
     window.location.hash = "#home";
+    window.location.reload()
+         history.go(0);
+
+
 };
   </script>
+
+  </script>
+
 
   <script type="text/javascript">
   $(document).ready(function() {
@@ -64,7 +71,15 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="header-tops">
-    <div class="container">
+    <div class="container">   
+      <script type="text/javascript">
+        window.onload = function (event) {
+        x = 0;
+        window.location.hash = "#home";
+        history.go(1);
+        };
+        </script>
+
       <!-- Uncomment below if you prefer to use an image logo -->
       <a class="mr-auto"> 
         <!-- <img src="http://prg.cs.umd.edu/img/logo/prg-black.png" class="img-fluid" width="10%"><img src="http://prg.cs.umd.edu/img/logo/umd-logo-white.png" class="img-fluid" width="7%">  -->
@@ -83,6 +98,7 @@
         </nav><!-- .nav-menu -->
 
         <div class="social-links">
+
           <!-- <div class="col-6" style="justify-content: center"> -->
            <a title="Google Scholar" href="https://scholar.google.com/citations?user=ASaUMpsAAAAJ&hl=en&oi=ao" class="ai"><i class="ai ai-google-scholar-square"></i></a>
            <a title="Github" href="http://github.com/chahatdeep/" class="github"><i class="ri-github-fill"></i></a>
@@ -93,6 +109,7 @@
             <a title="Facebook" href="http://facebook.com/chahatdeep" class="facebook"><i class="icofont-facebook"></i></a>
             <a title="Instagram" href="http://instagram.com/chahatdeep" class="instagram"><i class="icofont-instagram"></i></a>
             <a title="Photography" href="http://instagram.com/photoonpixel" class="ri-camera-3-fill"><i class="icofont-ri-camera-3-fill"></i></a>
+
             <!-- <a title="Reddit" href="https://www.reddit.com/user/chahatdeep/" class="reddit"><i class="icofont-reddit"></i></a> -->
 
             <!-- 500px -->
@@ -112,6 +129,7 @@
           <!-- <div style="position: fixed; z-index: -99; width: 100%; height: 100%"> -->
            <!-- </div> -->
          </header><!-- End Header -->
+
 
 
          <!-- ======= Video Background ======= -->
