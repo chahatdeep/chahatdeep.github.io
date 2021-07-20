@@ -352,7 +352,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu a:before {
   content: "";
-  position: absolute;
+  position: -10000px;
+  /* position: absolute;*/
   width: 0;
   height: 2px;
   bottom: -4px;
